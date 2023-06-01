@@ -27,10 +27,14 @@ function App() {
       <div className='App'>
       <h1>Ingrese la información de su pelicula favorita</h1>
       <form className='form1' onSubmit={handlerEnviar}>
+      <div>
         <label>Pelicula</label>
         <input value={pelicula} onChange={e => setPelicula(e.target.value)}/>
+       </div>
+       <div>
         <label>Genero</label>
         <input value={genero} onChange={e => setGenero(e.target.value)}/>
+        </div>
         <button type='submit'>Enviar</button>
         </form>
         
